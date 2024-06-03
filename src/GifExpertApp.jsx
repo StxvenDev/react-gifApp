@@ -1,8 +1,9 @@
+import React from 'react'
 import {useState} from 'react'
 import { AddCategory, GifGrid } from './Components';
 
 export const GifExpertApp = () => {
-  const [Categories, setCategories] = useState(['Shingeki no kyojin', 'Naruto']);
+  const [Categories, setCategories] = useState(['shingeki no kyojin', 'naruto']);
   const onAddCategory = (newCategory = '') => {
     const lowerCategories = Categories.map(category => category.toLowerCase());
     const lowerNewCategory = newCategory.toLowerCase();
